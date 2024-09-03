@@ -61,7 +61,10 @@ def recommend_for_students(student_id, student_tfidf, alumni_tfidf, alumni_df):
     
     except IndexError:
         return []
-
+@app.route('/')
+def home():
+    return "Flask API is running!"
+    
 @app.route('/recommend/<int:student_id>', methods=['GET'])
 def recommend(student_id):
     try:
