@@ -10,12 +10,13 @@ CORS(app)
 
 # Sample alumni dataset
 alumni_data = {
-    'alumni_id': [1, 2, 3, 4],
+    'alumni_id': ['66d4316ac746b56f811d68a9', '66d43194c746b56f811d68ad', '66d43230c746b56f811d68b1', '66d4328ec746b56f811d68b5','66d432d0c746b56f811d68b9'],
     'interests': [
-        'machine learning, data science',
-        'finance, investment banking',
-        'marketing, social media',
-        'software engineering, cloud computing'
+        'once a student, always a proud alumnus,coding, gaming, web dev, app dev,cst , aiml',
+        'coding, web dev, cst, aiml',
+        'gaming, app dev, cst, aiml',
+        'cricket, c++, cst, aiml',
+        'coding ,gaming, web dev, app dev, cst, aiml'
     ]
 }
 
@@ -23,11 +24,13 @@ alumni_df = pd.DataFrame(alumni_data)
 
 # Sample student dataset
 student_data = {
-    'student_id': [101, 102, 103],
+    'student_id': ['66d42d0bc908db093154dc57','66d42d8bc908db093154dc5f','66d42dcfc908db093154dc63','66d42e47c908db093154dc67','66d42e90c908db093154dc6b'],
     'interests': [
-        'data science, artificial intelligence',
-        'investment banking, stock market',
-        'cloud computing, software development'
+        'aspiring artist , eternal student, coding, gaming, web dev, app dev, cst, aiml',
+        'aspiring artist , eternal student, coding, web dev, cst, aiml',
+        'aspiring artist , eternal student, gaming, app dev, cst, aiml',
+        'aspiring artist , eternal student, cricket, c++, cst , aiml',
+        'aspiring artist , eternal student,coding , gaming , web dev, app dev, cst , aiml'
     ]
 }
 
