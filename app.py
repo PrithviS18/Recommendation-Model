@@ -68,7 +68,7 @@ def recommend_for_students(student_id, student_tfidf, alumni_tfidf, alumni_df):
 def home():
     return "Flask API is running!"
     
-@app.route('/recommend/<int:student_id>', methods=['GET'])
+@app.route('/recommend/<student_id>', methods=['GET'])
 def recommend(student_id):
     try:
         recommendations = recommend_for_students(student_id, student_tfidf, alumni_tfidf, alumni_df)
